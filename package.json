@@ -23,5 +23,9 @@
   "homepage": "https://github.com/Carlos-Blanco/fizz-buzz-tdd#readme",
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0",
+    "vitest": "^0.23.4"
   }
 }
