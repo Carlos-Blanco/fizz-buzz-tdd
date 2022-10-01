@@ -1,6 +1,27 @@
 {
-  "devDependencies": {
-    "standard": "^17.0.0",
-    "vitest": "^0.23.4"
+  "name": "fizz-buzz-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlos-Blanco/fizz-buzz-tdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carlos-Blanco/fizz-buzz-tdd/issues"
+  },
+  "homepage": "https://github.com/Carlos-Blanco/fizz-buzz-tdd#readme",
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
