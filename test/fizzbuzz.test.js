@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest"
 
-const fizzbuzz = () => {
+const fizzbuzz = (value) => {
 
 }
 
