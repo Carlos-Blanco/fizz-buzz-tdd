@@ -4,10 +4,11 @@ const fizzbuzz = (number) => {
  if (typeof number !== 'number') throw new Error()
   let multipleOfThree = number % 3
   let multipleOfFive = number % 5
-  if (multipleOfThree === 0) {
+  if (multipleOfFive === multipleOfThree && multipleOfThree === 0) {
+    return 'fizzbuzz'
+  } else if (multipleOfThree === 0) {
     return 'fizz'
-  }
-  if (multipleOfFive === 0) {
+  } else if (multipleOfFive === 0) {
     return 'buzz'
   }
  return number
@@ -27,7 +28,7 @@ describe('fizzbuzz', () => {
     expect(fizzbuzz(1)).toBe(1)
   })
 
-  it('it should return 1 if parameter is 2', () => {
+  it('it should return 2 if parameter is 2', () => {
     expect(fizzbuzz(2)).toBe(2)
   })
 
@@ -45,6 +46,12 @@ describe('fizzbuzz', () => {
     expect(fizzbuzz(10)).toBe('buzz')
     expect(fizzbuzz(25)).toBe('buzz')
     expect(fizzbuzz(100)).toBe('buzz')
+  })
+
+  it('it should return fizzbuzz if parameter is multiple of 3 and 5', () => {
+    expect(fizzbuzz(15)).toBe('fizzbuzz')
+    expect(fizzbuzz(30)).toBe('fizzbuzz')
+    expect(fizzbuzz(90)).toBe('fizzbuzz')
   })
 
 })
