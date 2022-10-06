@@ -4,14 +4,10 @@ const fizzbuzz = (number) => {
  if (typeof number !== 'number') throw new Error()
   let multipleOfThree = number % 3
   let multipleOfFive = number % 5
-  if (multipleOfFive === multipleOfThree && multipleOfThree === 0) {
-    return 'fizzbuzz'
-  } else if (multipleOfThree === 0) {
-    return 'fizz'
-  } else if (multipleOfFive === 0) {
-    return 'buzz'
-  }
- return number
+  if (multipleOfFive === 0  && multipleOfThree === 0) return 'fizzbuzz'
+  if (multipleOfThree === 0) return 'fizz'
+  if (multipleOfFive === 0) return 'buzz'
+  return number
 }
 
 
